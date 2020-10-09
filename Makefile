@@ -1,6 +1,9 @@
 up:
 	docker-compose up -d
 
+start:
+	docker-compose start
+
 stop:
 	docker-compose stop
 
@@ -9,7 +12,7 @@ ps:
 
 restart:
 	make stop
-	make up
+	make start
 
 init:
 	docker-compose build
