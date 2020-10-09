@@ -3,7 +3,7 @@ services:
   react:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: node/Dockerfile
     volumes:
      - ./:/usr/src/app
     command: sh -c "cd workplace && yarn add react-router-dom firebase bootstrap reactstrap react-loading-overlay formik yup && yarn start"
